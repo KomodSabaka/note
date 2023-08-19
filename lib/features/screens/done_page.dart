@@ -25,8 +25,7 @@ class DoneNotePage extends StatefulWidget {
   State<DoneNotePage> createState() => _DoneNotePageState();
 }
 
-class _DoneNotePageState extends State<DoneNotePage>
-    with AutomaticKeepAliveClientMixin {
+class _DoneNotePageState extends State<DoneNotePage>{
 
   void _addNote(Note note) {
     context
@@ -35,11 +34,7 @@ class _DoneNotePageState extends State<DoneNotePage>
   }
 
   @override
-  bool get wantKeepAlive => true;
-
-  @override
   Widget build(BuildContext context) {
-    super.build(context);
     var size = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: AppColors.donePageBG,

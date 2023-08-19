@@ -26,8 +26,7 @@ class ProgressPage extends StatefulWidget {
   State<ProgressPage> createState() => _ProgressPageState();
 }
 
-class _ProgressPageState extends State<ProgressPage>
-    with AutomaticKeepAliveClientMixin {
+class _ProgressPageState extends State<ProgressPage>{
   bool _isReordering = false;
 
   void _addNote(Note note) {
@@ -49,11 +48,7 @@ class _ProgressPageState extends State<ProgressPage>
   }
 
   @override
-  bool get wantKeepAlive => true;
-
-  @override
   Widget build(BuildContext context) {
-    super.build(context);
     var size = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: AppColors.progressPageBG,

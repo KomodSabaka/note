@@ -21,14 +21,10 @@ class TemplateNotePage extends StatefulWidget {
   State<TemplateNotePage> createState() => _TemplateNotePageState();
 }
 
-class _TemplateNotePageState extends State<TemplateNotePage>
-    with AutomaticKeepAliveClientMixin {
-  @override
-  bool get wantKeepAlive => true;
+class _TemplateNotePageState extends State<TemplateNotePage> {
 
   @override
   Widget build(BuildContext context) {
-    super.build(context);
     var size = MediaQuery.of(context).size;
     return SafeArea(
       child: Stack(
